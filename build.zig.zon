@@ -1,0 +1,19 @@
+.{
+    .name = "zmpv-gtk4",
+    .version = "1.0.0",
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "main.zig",
+    },
+    .dependencies = .{
+        .gtk = .{
+            .url = "https://github.com/DerryAlex/zig-gir-ffi/releases/download/v0.8.3/gtk4.tar.gz",
+            .hash = "12204c2f3a8a58b3e34e95bc1ffef1779f88c6679a1717e63a08feeceb38520424a0",
+        },
+        .zmpv = .{
+            .url = "https://github.com/hasanpasha/zmpv/archive/refs/tags/1.0.0.tar.gz",
+            .hash = "1220d1d4e8152fa075948bd63e1fc532a55dba2d5a7ebd88bfe9314707cf3f4c5fa8",
+        },
+    },
+}
